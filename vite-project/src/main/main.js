@@ -36,3 +36,32 @@ export const titles = [
         description: 'A small text describing one of the goals in two lines. A small text describing one of the goals in two lines.',
     }
 ]
+
+let team = document.getElementById('team')
+let cum = document.getElementById('#cum')
+let sol = document.getElementById('sol')
+let qua = document.getElementById('qua')
+
+let line = document.getElementById('line')
+let change = document.getElementById('change')
+
+
+export const descs = [
+    {
+        title: 'Close-knit Team',
+        description: 'fuck off'
+    },
+    {
+        title: 'Close-knit Cum',
+        description: 'fuck off'
+    },
+    {
+        title: 'Close-knit Solution',
+        description: 'fuck off'
+    },
+    {
+        title: 'Close-knit Quality',
+        description: 'fuck off'
+    },
+]
+

@@ -1,5 +1,7 @@
 import { photos } from './main'
 import { titles } from './main'
+import { descs } from './main'
+import Button from './button/button'
 
 function Main() {
     return(
@@ -60,38 +62,48 @@ function Main() {
                             <div className='two_main_left_line'>
 
                             </div>
-                            <div className='two_main_left_other_line'>
+                            <div className='two_main_left_other_line' id='line'>
 
                             </div>
                         </div>
                         <div className='two_main_left_choice'>
                             <div>
-                                <p>Team</p>
+                                <p id='team'>Team</p>
                             </div>
                             <div>
-                                <p>Cummunication</p>
+                                <p id='cum'>Cummunication</p>
                             </div>
                             <div>
-                                <p>Solution</p>
+                                <p id='sol'>Solution</p>
                             </div>
                             <div>
-                                <p>Quality</p>
+                                <p id='qua'>Quality</p>
                             </div>
                         </div>
                     </div>
                     <div className='two_main_right'>
                         <div className='two_main_right_title'>
-                            <p>Close-knit team</p>
+                            <p>{descs[0].title}</p>
                         </div>
                         <div className='two_main_right_desc'>
-                            <p>A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines.</p>
+                            <p>{descs[0].description}</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <section>
+                <h1>fucking piece of shit</h1>
+                <Button fuck = 'fuck'/>
+                <Button fuck = 'shit'/>
+                <Button fuck = 'piss'/>
+            </section>
         </main>
+        
     </> 
     )
+    
 }
+
+
 
 export default Main
