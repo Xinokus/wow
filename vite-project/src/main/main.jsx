@@ -1,9 +1,19 @@
 import { photos } from './main'
 import { titles } from './main'
-import { descs } from './main'
+import { content } from './button/button'
+import { useState } from 'react'
 import Button from './button/button'
 
 function Main() {
+    const [con, setCon] = useState('Close-Knit fuck')
+    const [con2, setCon2] = useState('fuck')
+
+    function handleClick(type, type2){
+        console.log('cum', type, type2)
+        setCon(type)
+        setCon2(type2)
+    }
+    
     return(
     <>
         <main>
@@ -68,34 +78,31 @@ function Main() {
                         </div>
                         <div className='two_main_left_choice'>
                             <div>
-                                <p id='team'>Team</p>
+                                <Button onClick = {() => handleClick(content[0].title, content[0].description)} fuck = 'Team'/>
                             </div>
                             <div>
-                                <p id='cum'>Cummunication</p>
+                                <Button onClick = {() => handleClick(content[1].title, content[1].description)} fuck = 'Cummunication'/>
                             </div>
                             <div>
-                                <p id='sol'>Solution</p>
+                                <Button onClick = {() => handleClick(content[2].title, content[2].description)} fuck = 'Solution'/>
                             </div>
                             <div>
-                                <p id='qua'>Quality</p>
+                                <Button onClick = {() => handleClick(content[3].title, content[3].description)} fuck = 'Quality'/>
                             </div>
                         </div>
                     </div>
                     <div className='two_main_right'>
                         <div className='two_main_right_title'>
-                            <p>{descs[0].title}</p>
+                            <p>{con}</p>
                         </div>
                         <div className='two_main_right_desc'>
-                            <p>{descs[0].description}</p>
+                            <p>{con2}</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <h1>fucking piece of shit</h1>
-                <Button fuck = 'fuck'/>
-                <Button fuck = 'shit'/>
-                <Button fuck = 'piss'/>
+                <h1></h1>
             </section>
         </main>
         
