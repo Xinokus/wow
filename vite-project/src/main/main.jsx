@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Button from './button/button'
 
 function Main() {
-    const [con, setCon] = useState('Close-Knit fuck')
+    const [con, setCon] = useState('Close-Knited fuck')
     const [con2, setCon2] = useState('fuck')
 
     function handleClick(type, type2){

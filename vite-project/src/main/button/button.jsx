@@ -11,7 +11,7 @@ export default function Button({fuck, onClick}){
 
 export const content = [
     {
-        title: 'Close-Knit fuck',
+        title: 'Close-Knited fuck',
         description: 'fuck',
     },
     {
@@ -19,11 +19,11 @@ export const content = [
         description: 'cum',
     },
     {
-        title: 'Close-Knit bitch',
+        title: 'Close-Knitter bitch',
         description: 'bitch',
     },
     {
-        title: 'Close-Knit pussy',
+        title: 'Close-Knitta pussy',
         description: 'pussy',
     },
 ]
