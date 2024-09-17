@@ -36,3 +36,31 @@ export const titles = [
         description: 'A small text describing one of the goals in two lines. A small text describing one of the goals in two lines.',
     }
 ]
+
+export const tech_descs = [
+    {
+        text: 'Title of the first technology',
+    },
+    {
+        text: 'Second technology description',
+    },
+    {
+        text: 'Third technology description',
+    },
+    {
+        text: 'Forth technology description',
+    },
+    {
+        text: 'Fifth technology description',
+    },
+    {
+        text: 'sixth technology description',
+    },
+    {
+        text: 'seventh technology description',
+    },
+    {
+        text: 'eighth technology description',
+    },
+]
+

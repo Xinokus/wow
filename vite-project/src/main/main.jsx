@@ -2,7 +2,12 @@ import { photos } from './main'
 import { titles } from './main'
 import { content } from './button/button'
 import { useState } from 'react'
+import { tech_descs } from './main'
+
+import ButtonActive from './buttonActive/buttonActive'
+import Button2 from './button2/button'
 import Button from './button/button'
+import JSIcon from '../assets/img/Icon_1.png'
 
 function Main() {
     const [con, setCon] = useState('Close-Knited fuck')
@@ -101,11 +106,77 @@ function Main() {
                     </div>
                 </div>
             </section>
-            <section>
-                <h1></h1>
+            <section className='three'>
+                <div className='three_text'>
+                    <p>How we work?</p>
+                </div>
+                <div className='three_main'>
+                    <div className='three_main_top'>
+                        <div className='three_main_top_one'>
+                            <p>Requirements analysis and statement of work</p>
+                        </div>
+                        <div className='three_main_top_two'>
+                            <p>Design (if required)</p>
+                            <p>Some words about this step in our work.</p>
+                        </div>
+                        <div className='three_main_top_three'>
+                            <p>Development, show demo version</p>
+                            <p>Some words about this step in our work.</p>
+                        </div>
+                    </div>
+                    <div className='three_main_bot'>
+                        <div className='three_main_bot_one'>
+                            <p>Testing, completion</p>
+                            <p>Some words about this step in our work.</p>
+                        </div>
+                        <div className='three_main_bot_two'>
+                            <p>Product launch</p>
+                            <p>Some words about this step in our work.</p>
+                        </div>
+                        <div className='three_main_bot_three'>
+                            <p>Continued technical support</p>
+                            <p>Some words about this step in our work. Some words about this step in our work. Some words about this step in our work.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='three_button'>
+                    <button type="button"><p>LEARN MORE</p></button>
+                </div>
+            </section>
+            <section className='four'>
+                <div className='four_text'>
+                    <p>Used technologies</p>
+                </div>
+                <div className='four_desc'>
+                    <p>Fill the gaps in your competencies by setting up a remote IT team. We will find the best experts for you and arrange everything around it. You will get a perfect match both in skills and cultural fit.</p>
+                </div>
+                <div className='four_main'>
+                    <div className='four_buttons'>
+                        <ButtonActive/>
+                        <Button2/>
+                        <Button2/>
+                        <Button2/>
+                        <Button2/>
+                        <Button2/>
+                        <Button2/>
+                        <Button2/>
+                    </div>
+                    <div className='four_titles'>
+                        <p>{tech_descs[0].text}</p>
+                        <p>{tech_descs[1].text}</p>
+                        <p>{tech_descs[2].text}</p>
+                        <p>{tech_descs[3].text}</p>
+                        <p>{tech_descs[4].text}</p>
+                        <p>{tech_descs[5].text}</p>
+                        <p>{tech_descs[6].text}</p>
+                        <p>{tech_descs[7].text}</p>
+                    </div>
+                    <div className='four_img'>
+                        <img src={JSIcon} alt="" />
+                    </div>
+                </div>
             </section>
         </main>
-        
     </> 
     )
     

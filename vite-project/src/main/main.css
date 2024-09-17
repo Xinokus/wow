@@ -217,3 +217,198 @@ section.two{
     font-size: 30px;
     color: #95989D;
 }
+.three{
+    width: 86%;
+    height: 970px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.three_text{
+    font-size: 60px;
+    width: 100%;
+    height: 150px;
+}
+.three_main{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.three_main_top{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three_main_top div:first-of-type{
+    width: 540px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.three_main_top div:nth-last-of-type(2), .three_main_top div:nth-last-of-type(1){
+    width: 540px;
+    height: 220px;
+    border: 1px #95989D solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+.three_main_top div p:first-of-type{
+    width: 86%;
+    font-size: 26px;
+}
+.three_main_top div p:nth-of-type(2){
+    width: 86%;
+    font-size: 24px;
+    color: #95989D;
+    letter-spacing: -1px;
+    margin-top: 40px;
+}
+.three_main_bot{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.three_main_bot div:nth-of-type(1), .three_main_bot div:nth-of-type(2){
+    width: 540px;
+    height: 220px;
+    border: 1px #95989D solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+.three_main_bot div:nth-of-type(3){
+    width: 520px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background-image: url(../assets/img/Iimg_BG.png);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.three_main_bot div p:first-of-type{
+    width: 86%;
+    font-size: 26px;
+}
+.three_main_bot div p:nth-of-type(2){
+    width: 86%;
+    font-size: 24px;
+    color: #95989D;
+    letter-spacing: -1px;
+    margin-top: 40px;
+}
+.three_main_bot div:nth-of-type(3) p:nth-of-type(2){
+    width: 90%;
+    margin-left: 4%;
+}
+.three_button{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three_button button{
+    width: 280px;
+    height: 280px;
+    background: none;
+    border-radius: 280px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.three_button button p{
+    width: 160px;
+    font-size: 30px;
+}
+.four{
+    width: 86%;
+    height: 640px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.four_text{
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+.four_desc{
+    margin-left: 760px;
+    width: 634px;
+    height: 144px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #95989D;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+.four_main{
+    width: 100%;
+    height: 238px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.four_buttons{
+    width: 100%;
+    height: 40px;
+    background-image: url(../assets/img/Line_3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four_titles{
+    width: 100%;
+    height: 68px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #95989D;
+}
+.four_titles p:nth-of-type(1){
+    width: 272px;
+    height: 68px;
+}
+.four_titles p{
+    width: 214px;
+}
+.four_titles p:first-of-type{
+    font-size: 26px;
+    color: black;
+}
+.four_img{
+    width: 100%;
+    height: 80px;
+}
