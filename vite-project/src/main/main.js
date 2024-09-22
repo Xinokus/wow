@@ -37,6 +37,13 @@ export const titles = [
     }
 ]
 
+export const workings = [
+    {
+        text: 'Some words about this step in our work.',
+        text1: 'Some words about this step in our work. Some words about this step in our work. Some words about this step in our work.',
+    },
+]
+
 export const tech_descs = [
     {
         text: 'Title of the first technology',

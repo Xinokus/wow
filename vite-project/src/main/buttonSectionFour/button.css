@@ -1,0 +1,42 @@
+.buttonDiv{
+    width: 214px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: 1s all ease;
+}
+.buttonSectionFour{
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+.buttonSectionFourActive{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    
+}
+.buttonDivActive{
+    width: 272px;
+    height: 40px;
+}
+.invisibleBacker{
+    width: 40px !important;
+    height: 40px !important;
+    transition: 1s all ease;
+}
+.buttonBacker{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(203, 202, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transition: 1s all ease;
+}

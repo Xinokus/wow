@@ -238,13 +238,33 @@ section.two{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .three_main_top{
     width: 100%;
     height: 220px;
     display: flex;
     justify-content: center;
+    align-items: start;
+    transition: 1s all ease;
+}
+.extend{
+    height: 300px;
+}
+div.three_main_block_active{
+    width: 540px; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background-image: url(../assets/img/Iimg_BG.png);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: 1s all ease;
 }
 .three_main_top div:first-of-type{
     width: 540px;
@@ -254,7 +274,18 @@ section.two{
     align-items: center;
     flex-direction: column;
 }
-.three_main_top div:nth-last-of-type(2), .three_main_top div:nth-last-of-type(1){
+.three_main_top_two{
+    width: 540px;
+    height: 220px;
+    border: 1px #95989D solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    transition: 1s all ease;
+}
+.three_main_top_three{
     width: 540px;
     height: 220px;
     border: 1px #95989D solid;
@@ -282,7 +313,7 @@ section.two{
     justify-content: center;
     align-items: start;
 }
-.three_main_bot div:nth-of-type(1), .three_main_bot div:nth-of-type(2){
+.three_main_bot_one{
     width: 540px;
     height: 220px;
     border: 1px #95989D solid;
@@ -292,21 +323,29 @@ section.two{
     flex-direction: column;
     border-radius: 40px;
 }
-.three_main_bot div:nth-of-type(3){
-    width: 520px;
-    height: 300px;
-    margin-left: 20px;
-    margin-top: 20px;
+.three_main_bot_two{
+    width: 540px;
+    height: 220px;
+    border: 1px #95989D solid;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 40px;
-    background-image: url(../assets/img/Iimg_BG.png);
-    background-color: blue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+}
+.three_main_bot_three{
+    width: 540px;
+    height: 220px;
+    border: 1px #95989D solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+#sectThreeBlocks{
+    cursor: pointer;
 }
 .three_main_bot div p:first-of-type{
     width: 86%;
@@ -376,6 +415,7 @@ section.two{
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    transition: 1s all ease;
 }
 .four_buttons{
     width: 100%;
@@ -387,6 +427,7 @@ section.two{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s all ease;
 }
 .four_titles{
     width: 100%;
@@ -396,19 +437,180 @@ section.two{
     margin-bottom: 40px;
     font-size: 18px;
     color: #95989D;
+    transition: 1s all ease;
 }
-.four_titles p:nth-of-type(1){
+.four_titles p.titleSectFour{
+    width: 214px;
+    height: 68px;
+    transition: 1s all ease;
+}
+.four_titles p.activeTitle{
     width: 272px;
     height: 68px;
-}
-.four_titles p{
-    width: 214px;
-}
-.four_titles p:first-of-type{
     font-size: 26px;
     color: black;
+    transition: 1s all ease;
 }
 .four_img{
     width: 100%;
     height: 80px;
+    display: flex;
+}
+.four_img_inside{
+    width: 198px;
+    opacity: 0;
+    transition: 1s all ease;
+}
+.invis{
+    opacity: 1;
+}
+
+.SectFive{
+    width: 86%;
+    height: 620px;
+    margin-top: 205px;
+    margin-bottom: 250px;
+}
+.SectFive_text{
+    width: 100%;
+    height: 60px;
+    font-size: 60px;
+}
+.SectFive_main{
+    width: 100%;
+    height: 460px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SectFive_main_part{
+    width: 31.5%;
+}
+.SectFive_main_part_text{
+    height: 60px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.SectFive_main_part_line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.SectFive_main_part_desc{
+    font-size: 24px;
+    color: #95989D;
+    letter-spacing: -1px;
+}
+.SectSix{
+    width: 96.5%;
+    height: 1000px;
+    background: linear-gradient(25deg, #2E2BD0, #7876F2);
+    border-radius: 70px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SectSix_Left{
+    width: 700px;
+    height: 800px;
+    margin-left: 120px;
+}
+.SectSix_text{
+    font-size: 100px;
+    color: white;
+    margin-bottom: 150px;
+}
+.SectSix_leftInputs input{
+    width: 700px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    margin-bottom: 50px;
+    color: #95989D;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+.SectSix_leftButton button{
+    width: 205px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2E2BD0;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+.SectSix_leftButton button p{
+    margin-right: 20px;
+    padding-bottom: 6px;
+}
+.SectSix_Right{
+    width: 700px;
+    height: 800px;
+    margin-right: 120px;
+}
+.SectSix_desc{
+    color: white;
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.SectSix_desc a{
+    color: white;
+    font-weight: 700;
+}
+.SectSix_rightButton button{
+    width: 350px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px white solid;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 95.5px;
+}
+.SectSix_rightButton p{
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.SectSix_rightInputs input{
+    width: 700px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    margin-bottom: 50px;
+    color: #95989D;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+#fileUpload{
+    display: none;
+}
+.SectSix_rightInputs label{
+    width: 700px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    margin-bottom: 50px;
+    color: rgba(149, 152, 157, 0.5);
+    font-size: 32px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
